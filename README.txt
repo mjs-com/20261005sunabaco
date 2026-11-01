@@ -77,3 +77,16 @@ https://learn.microsoft.com/ja-jp/azure/devops/repos/git/git-branching-guidance?
 
 資料の基本方針をもとに、命名形式、最低1名の承認、Squash and merge、
 develop を常設しないことを本プロジェクトの運用ルールとして定めた。
+
+
+9. 数当てゲームの実行方法
+プロジェクト直下で次のコマンドを実行する。
+
+    C:\Python313\python.exe -B number_guessing.py
+
+PythonがPATHに設定されている環境では python -B number_guessing.py でも実行できる。
+1〜100の整数を10回以内に当てる。qで終了し、勝敗確定後はyで再プレイ、nで終了する。
+
+テスト実行：
+
+    C:\Python313\python.exe -B -m unittest discover -s tests -v
